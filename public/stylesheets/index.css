@@ -56,11 +56,13 @@ nav .btns button, .sponsors button {
 }
 
 .hero {
- background-color: #fff;
- min-height: 330px;
- display: grid;
- grid-template-columns: 50% 50%;
- padding: 0px 80px;
+  background: url(/img/herobg.png) no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 330px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0px 80px;
 }
 
 .hero img {
@@ -73,7 +75,7 @@ nav .btns button, .sponsors button {
   padding: 15px;
   color: #fff;
   border-radius: 0px 0px 0px 70px;
-  margin-bottom: 40px;
+  margin-bottom: 110px;
 }
 
 .pink {
@@ -81,11 +83,36 @@ nav .btns button, .sponsors button {
 }
 
 .info {
- background-color: #27ac94;
- border-bottom: 10px solid #d97227;
- height: 300px;
- padding:15px;
- color:#fff;
+  background: url(/img/infobg.png) no-repeat;
+  background-color: #27ac94;
+  border-bottom: 10px solid #d97227;
+  height: 300px;
+  padding:15px;
+  color:#fff;
+  position: relative;
+}
+
+.info_blk ul{
+  margin-top: 20px;
+}
+
+.kids img {
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.circle {
+  display: block;
+  border-radius: 100%;
+  background-color: #752251;
+  height: 370px;
+  width: 370px;
+  position: absolute;
+  z-index: 9998;
+  top: -37px;
+  right: 91px;
 }
 
 .info ul li {

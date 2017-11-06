@@ -5,12 +5,16 @@ require 'pry'
 
 include SendGrid
 
-get '/index' do
+get '/' do
   erb :index
 end
 
 get '/layout' do
   erb :layout
+end
+
+get '/about' do
+  erb :about
 end
 
 get '/contact' do
@@ -21,7 +25,7 @@ post '/' do
   # binding.pry
 
   from = Email.new(email: params['email'])
-  to = Email.new(email: 'test@example.com')
+  to = Email.new(email: 'fatima@lurmarketing.com')
   subject = 'Sending with SendGrid is Fun'
   content = Content.new(type: 'text/plain', value: params['body'])
   mail = Mail.new(from, subject, to, content)
