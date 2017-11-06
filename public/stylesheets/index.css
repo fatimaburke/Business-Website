@@ -207,6 +207,12 @@ pre {
   font-size: 12px;
 }
 
+.content .mainimg img{
+  width:100%;
+  height: auto;
+  border-radius: 0px 0px 70px 0px;
+}
+
 .email {
   background-color: #f7f7f7;
   padding:20px;
