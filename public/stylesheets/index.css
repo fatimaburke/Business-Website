@@ -28,7 +28,7 @@ nav li a {
   color: #a54d80;
 }
 
-nav ul, footer .sponsors {
+nav ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
   grid-gap: 10px;
@@ -76,6 +76,16 @@ nav .btns button, .sponsors button {
   color: #fff;
   border-radius: 0px 0px 0px 70px;
   margin-bottom: 110px;
+}
+
+/* CSS Tricks: Browser specific (not valid) styles to make preformatted text wrap */
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .pink {
@@ -155,8 +165,50 @@ nav .btns button, .sponsors button {
   background-color: #dedede;
 }
 
+.content {
+  padding: 50px 130px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+.content h1 {
+  margin-bottom: 40px;
+}
+
+.content form {
+  margin-top: 20px;
+}
+
+.content form label{
+  width: 100%;
+  display: block;
+}
+
+.content form input {
+  height: 34px;
+  border-radius: 0px 10px 10px 10px;
+  border: none;
+  background-color: #dedede;
+  width:100%;
+  margin: 10px 0px 20px 0px;
+}
+
+.content form textarea {
+  border-radius: 0px 10px 10px 10px;
+  border: none;
+  background-color: #dedede;
+  width: 100%;
+}
+
+.content form input[type="submit"] {
+  background-color: #27ac94;
+  color: #fff;
+  font-size: 12px;
+}
+
 .email {
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding:20px;
   height: 200px;
   text-align: center;
@@ -190,14 +242,36 @@ form button {
   background-color: #d97227;
   padding: 0px 30px;
 }
+
+footer .inner {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .sponsors {
   background-color: #752251;
-  height: 100px;
-  padding:20px;
+  padding:20px 120px;
   text-align: center;
+  color: #fff;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-gap: 10px;
 }
+
+.sponsors img {
+  height: auto;
+  width: 80%;
+}
+
+.sponsors button {
+  height: 45px;
+  width: 135px;
+  background-color: #27ac94;
+}
+
 .ftr_list {
   background-color: #303030;
-  padding:20px;
+  padding:20px 120px;
   color: #fff;
 }

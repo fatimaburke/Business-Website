@@ -26,6 +26,7 @@ post '/' do
 
   from = Email.new(email: params['email'])
   to = Email.new(email: 'fatima@lurmarketing.com')
+  name = Email.new(name: params['name'])
   subject = 'Sending with SendGrid is Fun'
   content = Content.new(type: 'text/plain', value: params['body'])
   mail = Mail.new(from, subject, to, content)
