@@ -1,22 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 * {
   box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
 }
-.main_menu {
+nav {
+  background-color: #752251;
   display: grid;
   grid-template-columns: 70% 30%;
 }
-.main_menu ul, footer .sponsors {
+
+nav li a, .dead_link {
+  line-height: 65px;
+}
+
+nav li a {
+  color:#fff;
+}
+
+.dead_link {
+  color: #a54d80;
+}
+
+nav ul, footer .sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
   grid-gap: 10px;
 }
 
-.info {
+nav .btns {
+  line-height: 65px;
+}
+nav .btns button {
+  padding:10px;
+}
 
+.hero {
+ background-color: #fff;
+ height: 330px;
+}
+
+.info {
+ background-color: #27ac94;
+ border-bottom: 10px solid #d97227;
+ height: 300px;
+ padding:15px;
+ color:#fff;
+}
+
+.three_cols {
+  min-height: 300px;
+  padding:15px;
+}
+
+.three_cols a {
+  min-height: 300px;
+  padding:15px;
+  color: #404040;
 }
 
 .three_cols, .ftr_list {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-gap: 10px;
+  background-color: #dedede;
+}
+.email {
+  background-color: #fff;
+  padding:15px;
+  height: 200px;
+}
+.sponsors {
+  background-color: #752251;
+  height: 100px;
+  padding:15px;
+}
+.ftr_list {
+  background-color: #303030;
+  padding:15px;
 }
