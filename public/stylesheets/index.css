@@ -162,11 +162,22 @@ nav .btns button, .sponsors button {
   text-align: center;
 }
 
+.email h1 {
+  color: #752251;
+  padding-bottom:10px;
+}
+
+.email label {
+  color: #27ac94;
+}
+
 .email input {
   height: 34px;
+  width: 230px;
   border-radius: 0px 10px 10px 10px;
-  border: 1px solid #ccc;
-  margin-right: 10px;
+  border: none;
+  margin: 20px;
+  background-color: #dedede;
 }
 
 form button {
@@ -177,6 +188,7 @@ form button {
   color: #fff;
   font-size:14px;
   background-color: #d97227;
+  padding: 0px 30px;
 }
 .sponsors {
   background-color: #752251;
