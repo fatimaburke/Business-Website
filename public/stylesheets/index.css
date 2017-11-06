@@ -1,3 +1,6 @@
 * {
   box-sizing: border-box;
 }
+.three_cols {
+  display: grid;
+}
