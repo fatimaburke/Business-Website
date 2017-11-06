@@ -6,6 +6,10 @@
   text-decoration: none;
   list-style-type: none;
 }
+h2 {
+  color: #27ac94;
+  padding-bottom: 5px;
+}
 nav {
   background-color: #752251;
   display: grid;
@@ -34,12 +38,37 @@ nav .btns {
   line-height: 65px;
 }
 nav .btns button {
-  padding:10px;
+  padding: 10px 30px;
+  border-radius: 0px 10px 10px 10px;
+  margin-right: 15px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
 }
 
 .hero {
  background-color: #fff;
- height: 330px;
+ min-height: 330px;
+ display: grid;
+ grid-template-columns: 50% 50%;
+ padding: 0px 80px;
+}
+
+.hero img {
+  margin: 80px;
+}
+
+.editor {
+  background-color: #303030;
+  font-size: 17px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 0px 0px 0px 70px;
+  margin-bottom: 40px;
+}
+
+.pink {
+  color: #ca4c95;
 }
 
 .info {
@@ -50,14 +79,34 @@ nav .btns button {
  color:#fff;
 }
 
+.info ul li {
+  list-style-type: disc;
+}
+
+.info_blk {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .three_cols {
   min-height: 300px;
-  padding:15px;
+  padding:20px;
+}
+
+.single_col {
+  margin: 20px;
+}
+
+.single_col img {
+  margin-bottom: 10px;
+}
+
+.more {
+  color: #752251;
 }
 
 .three_cols a {
   min-height: 300px;
-  padding:15px;
   color: #404040;
 }
 
@@ -67,17 +116,20 @@ nav .btns button {
   grid-gap: 10px;
   background-color: #dedede;
 }
+
 .email {
   background-color: #fff;
-  padding:15px;
+  padding:20px;
   height: 200px;
+  text-align: center;
 }
 .sponsors {
   background-color: #752251;
   height: 100px;
-  padding:15px;
+  padding:20px;
+  text-align: center;
 }
 .ftr_list {
   background-color: #303030;
-  padding:15px;
+  padding:20px;
 }
