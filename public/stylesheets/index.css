@@ -83,7 +83,7 @@ nav .btns button, .sponsors button {
 }
 
 .info {
-  background: url(/img/infobg.png) no-repeat;
+  background: url(/img/infobg.png) center no-repeat;
   background-color: #27ac94;
   border-bottom: 10px solid #d97227;
   height: 300px;
@@ -92,14 +92,19 @@ nav .btns button, .sponsors button {
   position: relative;
 }
 
+.info_blk {
+  width: 76%;
+  margin: 0 auto;
+}
+
 .info_blk ul{
   margin-top: 20px;
 }
 
 .kids img {
   position: absolute;
-  top: -90px;
-  right: 0px;
+  top: -91px;
+  right: 152px;
   z-index: 9999;
 }
 
@@ -112,21 +117,16 @@ nav .btns button, .sponsors button {
   position: absolute;
   z-index: 9998;
   top: -37px;
-  right: 91px;
+  right: 262px;
 }
 
 .info ul li {
   list-style-type: disc;
 }
 
-.info_blk {
-  width: 95%;
-  margin: 0 auto;
-}
-
 .three_cols {
   min-height: 300px;
-  padding:20px;
+  padding: 30px 160px;
 }
 
 .single_col {
@@ -135,6 +135,8 @@ nav .btns button, .sponsors button {
 
 .single_col img {
   margin-bottom: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .more {
