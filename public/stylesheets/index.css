@@ -1,6 +1,22 @@
 * {
   box-sizing: border-box;
 }
-.three_cols {
+.main_menu {
   display: grid;
+  grid-template-columns: 70% 30%;
+}
+.main_menu ul, footer .sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-gap: 10px;
+}
+
+.info {
+
+}
+
+.three_cols, .ftr_list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
 }
