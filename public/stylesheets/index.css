@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Inconsolata');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,10 +6,12 @@
   text-decoration: none;
   list-style-type: none;
 }
+
 h2 {
   color: #27ac94;
   padding-bottom: 5px;
 }
+
 nav {
   background-color: #752251;
   display: grid;
@@ -21,7 +23,7 @@ nav li a, .dead_link {
 }
 
 nav li a {
-  color:#fff;
+  color: #fff;
 }
 
 .dead_link {
@@ -30,7 +32,7 @@ nav li a {
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 10px;
 }
 
@@ -81,11 +83,17 @@ nav .btns button, .sponsors button {
 /* CSS Tricks: Browser specific (not valid) styles to make preformatted text wrap */
 
 pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  font-family: 'Inconsolata', monospace;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
 }
 
 .pink {
@@ -97,8 +105,8 @@ pre {
   background-color: #27ac94;
   border-bottom: 10px solid #d97227;
   height: 300px;
-  padding:15px;
-  color:#fff;
+  padding: 15px;
+  color: #fff;
   position: relative;
 }
 
@@ -107,7 +115,7 @@ pre {
   margin: 0 auto;
 }
 
-.info_blk ul{
+.info_blk ul {
   margin-top: 20px;
 }
 
@@ -180,7 +188,7 @@ pre {
   margin-top: 20px;
 }
 
-.content form label{
+.content form label {
   width: 100%;
   display: block;
 }
@@ -190,7 +198,7 @@ pre {
   border-radius: 0px 10px 10px 10px;
   border: none;
   background-color: #dedede;
-  width:100%;
+  width: 100%;
   margin: 10px 0px 20px 0px;
 }
 
@@ -207,22 +215,22 @@ pre {
   font-size: 12px;
 }
 
-.content .mainimg img{
-  width:100%;
+.content .mainimg img {
+  width: 100%;
   height: auto;
   border-radius: 0px 0px 70px 0px;
 }
 
 .email {
   background-color: #f7f7f7;
-  padding:20px;
+  padding: 20px;
   height: 200px;
   text-align: center;
 }
 
 .email h1 {
   color: #752251;
-  padding-bottom:10px;
+  padding-bottom: 10px;
 }
 
 .email label {
@@ -244,7 +252,7 @@ form button {
   border: 0px;
   margin-right: 10px;
   color: #fff;
-  font-size:14px;
+  font-size: 14px;
   background-color: #d97227;
   padding: 0px 30px;
 }
@@ -256,12 +264,12 @@ footer .inner {
 
 .sponsors {
   background-color: #752251;
-  padding:20px 120px;
+  padding: 20px 120px;
   text-align: center;
   color: #fff;
   height: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 
@@ -278,6 +286,6 @@ footer .inner {
 
 .ftr_list {
   background-color: #303030;
-  padding:20px 120px;
+  padding: 20px 120px;
   color: #fff;
 }
