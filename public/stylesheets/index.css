@@ -221,6 +221,10 @@ pre {
   border-radius: 0px 0px 70px 0px;
 }
 
+.map iframe {
+  border-radius: 0px 70px 0px 70px;
+}
+
 .email {
   background-color: #f7f7f7;
   padding: 20px;
